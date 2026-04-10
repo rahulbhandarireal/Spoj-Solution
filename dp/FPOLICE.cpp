@@ -34,8 +34,8 @@ using namespace std;
  
 
 //dp 
-pair<ll, ll> recr(vector<vector<int>> time,
-                  vector<vector<int>> &risk, vector<vector<pair<ll, ll>>> &dp,
+pair<ll, ll> recr(vector<vector<int>>& time,
+                  vector<vector<int>>& risk, vector<vector<pair<ll, ll>>> &dp,
                   int curnode, int targetnode, int ti, int lt)
 {
     if (ti > lt)
