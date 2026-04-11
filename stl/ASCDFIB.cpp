@@ -25,31 +25,16 @@ using namespace std;
 #define debug(x)
 #endif
 
-bool isoposite(ll a,ll b){
-    return (a>0 && b<0) || (a<0 && b>0);
-}
-
 void solve() {
-    ll n;
-    cin >> n ;
-    vector<ll> ar(n),dp(n,1ll);
-    vin(ar,n);
-    ll ans=1;
-
-    for(int i=1;i<n;i++){
-        for(int j=0;j<i;j++){
-            if(abs(ar[j]) < abs(ar[i]) && isoposite(ar[i],ar[j])){
-                dp[i]=max(dp[i],1+dp[j]);
-                ans=max(ans,dp[i]);
-            }
-        }
-    }
-    cout<<ans<<"\n";
+    int n, a, b;
+    cin >> n >> a >> b;
 
 }
 
 int main() {
     fastio;
-    solve();
+    int t = 1;
+    cin >> t;
+    while (t--) solve();
     return 0;
 }
