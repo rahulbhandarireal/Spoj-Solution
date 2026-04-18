@@ -25,7 +25,7 @@ using namespace std;
 #define debug(x)
 #endif
 
-int MAX_COUNT=1e5;
+int MAX_COUNT=1e7;
 vector<int> primeno(MAX_COUNT,0);
 
 void findprime(){
